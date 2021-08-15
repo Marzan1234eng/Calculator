@@ -13,33 +13,43 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="offset-md-2 col-xl-3 col-lg-5 col-md-6 col-sm-12 calculator">
+        <div class="offset-md-2 col-xl-3 col-lg-5 col-md-6 col-lg-4 calculator">
             <div class="calculator-keys">
-                <input type="text" id="display" class="display text-end" placeholder="0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="display" class="col-12 display text-end " placeholder="0">
+                    </div>
+                </div>
 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-12 d-flex justify-content-between">
                         <button class="btn" onclick="dis('7')">7</button>
-                        <button class="btn" onclick="dis('4')">4</button>
-                        <button class="btn" onclick="dis('1')">1</button>
-                        <button class="btn" onclick="clr()">c</button>
-                    </div>
-                    <div class="col-md-3">
                         <button class="btn" onclick="dis('8')">8</button>
-                        <button class="btn" onclick="dis('5')">5</button>
-                        <button class="btn" onclick="dis('2')">2</button>
-                        <button class="btn" onclick="dis('0')">0</button>
-                    </div>
-                    <div class="col-md-3">
                         <button class="btn" onclick="dis('9')">9</button>
-                        <button class="btn" onclick="dis('6')">6</button>
-                        <button class="btn" onclick="dis('3')">3</button>
-                        <button class="btn" onclick="solve()">=</button>
+                        <button class="btn" onclick="dis('/')">/</button>
                     </div>
-                    <div class="col-md-3">
-                        <button class="btn" onclick="dis('/')" >/</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-between">
+                        <button class="btn" onclick="dis('4')">4</button>
+                        <button class="btn" onclick="dis('5')">5</button>
+                        <button class="btn" onclick="dis('6')">6</button>
                         <button class="btn" onclick="dis('*')">*</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-between">
+                        <button class="btn" onclick="dis('1')">1</button>
+                        <button class="btn" onclick="dis('2')">2</button>
+                        <button class="btn" onclick="dis('3')">3</button>
                         <button class="btn" onclick="dis('-')">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-between">
+                        <button class="btn" onclick="clr()" >c</button>
+                        <button class="btn" onclick="dis('0')">0</button>
+                        <button class="btn" onclick="solve()">=</button>
                         <button class="btn" onclick="dis('+')">+</button>
                     </div>
                 </div>
